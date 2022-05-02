@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: defaultimage 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: defaultimage
+  template:
+    metadata:
+      labels:
+        app: defaultimage 
+    spec:
+      containers:
+        - name: defaultimage 
+          image: charlieorch/capstone-app:1.0.0
+          ports:
+          - containerPort: 3001
