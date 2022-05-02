@@ -22,13 +22,13 @@ spec:
             - containerPort: 3001
           livenessProbe:
             httpGet:
-              path: /
+              path: /ping
               port: 3001
-            initialDelaySeconds: 200
+            initialDelaySeconds: 30
             timeoutSeconds: 5
           readinessProbe:
             httpGet:
-              path: /
+              path: /ping
               port: 3001
-            initialDelaySeconds: 200
-            timeoutSeconds: 10
+            initialDelaySeconds: 30
+            timeoutSeconds: 5
