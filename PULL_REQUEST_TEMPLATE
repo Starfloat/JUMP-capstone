@@ -4,10 +4,6 @@
 
 Please be sure that any install or build dependencies are removed before the end of the layer when doing a build.
 
-## General steps for completing this pull request
-
-Please review the [guidelines for contributing](CONTRIBUTING.md) to this repository.
-
 ### Checklist
 Ensure that your `pull request` has followed all the steps below:
 

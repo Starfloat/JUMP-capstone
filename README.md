@@ -1,4 +1,26 @@
-# Project requirements
+# JUMP-capstone
+
+## Getting Started
+1. run `npm install` in the `/app` directory to download the necessary packages
+2. run `node index.js` to start the program
+
+## Application Demo
+- ingress http://20.223.163.121/ping
+- dev http://20.123.124.154:3001/ping
+- qa http://20.123.125.27:3001/ping
+- stage http://20.123.127.73:3001/ping
+- prod http://20.123.127.130:3001/ping
+
+# How the application works
+
+A simple web API which has 3 routes. `/{any_number}`, `/ping`, and `/version`
+
+At the end of the website url add any of the above routes.
+- GET /{any_number} should return the roman numeral equivalent of that number
+- GET /ping should return the static text "pong".
+- GET /version should return the version of the application like v1, v2 etc.
+
+# Project Requirements
 1. Add detailed instructions in README.md to build, run and test the project in local.
 2. Dockerize the application and store the image on public Docker repository. Since you're working as a team, you can use anyone account to store the image or create one for your team. **THIS ONLY FOR DEVELOPMENT. FOR PRODUCTION RELEASE, YOU'LL USE ACR.**
 3. Create a Kubernetes Cluster on Azure using Terraform and make sure that all your teammates have acces to it.
@@ -26,8 +48,7 @@ Add the following files to the repo: (check [this](https://medium.com/code-facto
 3. Support file
 4. Pull request template file (nice to have)
 
-
-# Extra credits
+## Extra credits
 - A dashboard to monitor:
     - Response times from the application
     - Memory and CPU usage of PODs
@@ -40,5 +61,6 @@ Add the following files to the repo: (check [this](https://medium.com/code-facto
 - Detailed log messages in the code to be able to debug the application upon failures.
 - Network diagram of the infrastructure
 - Unit and integration tests
-# Deliverables
+
+## Deliverables
 Github repository for the project. Don't forget to add **saikiranchalla1** as the collaborator in the project.
